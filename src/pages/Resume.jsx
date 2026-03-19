@@ -1,3 +1,6 @@
+import profile from '../data/profile';
+import { DownloadIcon } from '../components/Icons';
+
 function Resume() {
   const skills = {
     'Languages & Frameworks': ['Ruby on Rails', 'React', 'JavaScript', 'TypeScript', 'Python', 'Stimulus.js'],
@@ -15,21 +18,18 @@ function Resume() {
           download
           className="btn btn-outline-primary btn-sm"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="me-1" viewBox="0 0 16 16">
-            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-          </svg>
+          <DownloadIcon />
           Download PDF
         </a>
       </div>
 
       <div className="resume-header mb-4">
-        <h4 className="mb-1">Michael Giver</h4>
+        <h4 className="mb-1">{profile.name}</h4>
         <p className="text-accent mb-2">
-          Software Engineer &amp; Physics PhD
+          {profile.title}
         </p>
         <p className="small text-muted mb-3">
-          Ballston Lake, NY &middot; github.com/giverm &middot; linkedin.com/in/michael-giver
+          {profile.location} &middot; {profile.github.label} &middot; {profile.linkedin.label}
         </p>
         <p className="mb-0">
           Full-stack software engineer with 10+ years of experience shipping production systems

@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/((?!assets|resume\\.pdf|photo-placeholder\\.svg).*)", "destination": "/index.html" }
+    { "source": "/((?!assets|resume\\.pdf|photo\\.jpeg|favicon\\.svg).*)", "destination": "/index.html" }
   ]
 }

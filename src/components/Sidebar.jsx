@@ -1,74 +1,68 @@
 import { NavLink } from 'react-router-dom';
+import profile from '../data/profile';
+import { GitHubIcon, LinkedInIcon, PersonIcon, DocumentIcon } from './Icons';
 
 function Sidebar() {
   return (
-    <aside className="sidebar col-md-4 col-lg-3 p-4 d-flex flex-column align-items-center min-vh-100">
+    <aside className="sidebar col-md-4 col-lg-3 p-4 d-flex flex-column align-items-center">
       <img
         src="/photo.jpeg"
-        alt="Mike Giver"
+        alt={profile.name}
         className="rounded-circle mb-3"
         width="150"
         height="150"
         style={{ objectFit: 'cover' }}
       />
-      <h4 className="mb-1">Michael Giver</h4>
+      <h4 className="mb-1">{profile.name}</h4>
       <p className="text-accent mb-1" style={{ fontSize: '0.95rem' }}>
-        Software Engineer &amp; Physics PhD
+        {profile.title}
       </p>
       <p className="text-muted text-center small mb-4">
-        Building software that creates meaningful, positive change.
+        {profile.tagline}
       </p>
 
-      <nav className="nav flex-column w-100 gap-2 mb-4">
-        <a href="https://github.com/giverm" target="_blank" rel="noopener noreferrer" className="nav-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
+      <nav className="nav flex-column w-100 gap-2 mb-4" aria-label="External links">
+        <a href={profile.github.url} target="_blank" rel="noopener noreferrer" className="nav-btn" aria-label="GitHub (opens in new tab)">
+          <GitHubIcon />
           GitHub
         </a>
-        <a href="https://linkedin.com/in/michael-giver" target="_blank" rel="noopener noreferrer" className="nav-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg>
+        <a href={profile.linkedin.url} target="_blank" rel="noopener noreferrer" className="nav-btn" aria-label="LinkedIn (opens in new tab)">
+          <LinkedInIcon />
           LinkedIn
         </a>
-        <hr className="sidebar-divider w-100 my-1" />
+      </nav>
+
+      <hr className="sidebar-divider w-100 my-1" />
+
+      <nav className="nav flex-column w-100 gap-2 mt-2 mb-4" aria-label="Site navigation">
         <NavLink to="/" className="nav-btn" end>
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-          </svg>
+          <PersonIcon />
           About
         </NavLink>
         <NavLink to="/resume" className="nav-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5zM4.5 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5"/>
-          </svg>
+          <DocumentIcon />
           Resume
         </NavLink>
       </nav>
 
       <div className="mt-auto d-flex gap-3">
         <a
-          href="https://github.com/giverm"
+          href={profile.github.url}
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
-          aria-label="GitHub"
+          aria-label="GitHub (opens in new tab)"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
+          <GitHubIcon size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/michael-giver"
+          href={profile.linkedin.url}
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
-          aria-label="LinkedIn"
+          aria-label="LinkedIn (opens in new tab)"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg>
+          <LinkedInIcon size={24} />
         </a>
       </div>
     </aside>
