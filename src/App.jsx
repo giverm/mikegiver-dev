@@ -7,7 +7,7 @@ function App() {
     <div className="container-fluid">
       <div className="row min-vh-100">
         <Sidebar />
-        <main className="col-md-8 col-lg-9 py-4">
+        <main className="main-content col-md-8 col-lg-9 py-4 px-4">
           <Routes>
             <Route path="/" element={<Resume />} />
             <Route path="/resume" element={<Resume />} />
