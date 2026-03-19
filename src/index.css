@@ -67,6 +67,11 @@ a:hover {
   border-color: rgba(107, 141, 242, 0.3);
 }
 
+.sidebar-divider {
+  border-color: rgba(255, 255, 255, 0.08);
+  opacity: 1;
+}
+
 .sidebar .social-link {
   color: var(--color-text-muted);
   transition: color 0.2s;
@@ -105,6 +110,52 @@ a:hover {
   font-size: 0.85rem;
   letter-spacing: 1.5px;
   margin-bottom: 1rem;
+}
+
+.about-card {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background-color: rgba(47, 57, 63, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-card-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(107, 141, 242, 0.12);
+  color: var(--color-primary);
+}
+
+.about-callout {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(107, 141, 242, 0.1), rgba(145, 204, 217, 0.1));
+  border: 1px solid rgba(145, 204, 217, 0.2);
+}
+
+.about-callout-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(145, 204, 217, 0.15);
+  color: var(--color-accent);
+}
+
+.about-card p, .about-callout p {
+  line-height: 1.7;
 }
 
 .skill-badge {
