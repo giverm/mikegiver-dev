@@ -1,19 +1,19 @@
 import AboutCard from '../components/AboutCard';
 import {
-  RobotIcon,
-  CpuIcon,
-  ClockHistoryIcon,
-  UnlockIcon,
+  PersonIcon,
+  CodeSlashIcon,
+  BriefcaseIcon,
+  HeartPulseIcon,
   EnvelopeIcon,
 } from '../components/Icons';
 import { subtitle, cards } from '../data/about';
 import renderLinkedText from '../utils/renderLinkedText';
 
 const iconMap = {
-  robot: RobotIcon,
-  cpu: CpuIcon,
-  clockHistory: ClockHistoryIcon,
-  unlock: UnlockIcon,
+  person: PersonIcon,
+  codeSlash: CodeSlashIcon,
+  briefcase: BriefcaseIcon,
+  heartPulse: HeartPulseIcon,
   envelope: EnvelopeIcon,
 };
 
@@ -30,7 +30,7 @@ function About() {
             key={index}
             title={card.title}
             variant={card.variant}
-            icon={<IconComponent />}
+            icon={<IconComponent size={24} />}
           >
             {card.paragraphs.map((text, i) => (
               <p

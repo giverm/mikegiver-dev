@@ -4,7 +4,7 @@ export const subtitle =
 // prettier-ignore
 export const cards = [
   {
-    icon: 'robot',
+    icon: 'person',
     paragraphs: [
       `I'm a software engineer with a PhD in Physics and over a decade of
       professional experience building web applications. My career has taken a
@@ -20,7 +20,7 @@ export const cards = [
     ],
   },
   {
-    icon: 'cpu',
+    icon: 'codeSlash',
     title: 'What I Do Now',
     paragraphs: [
       `I'm currently a software engineer at
@@ -33,7 +33,7 @@ export const cards = [
     ],
   },
   {
-    icon: 'clockHistory',
+    icon: 'briefcase',
     title: "Where I've Been",
     paragraphs: [
       `Before Nava, I spent three and a half years at Pioneer Valley Books
@@ -49,7 +49,7 @@ export const cards = [
     ],
   },
   {
-    icon: 'unlock',
+    icon: 'heartPulse',
     title: 'Outside of Work',
     variant: 'callout',
     paragraphs: [
