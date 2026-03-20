@@ -1,9 +1,9 @@
 :root {
-  --color-bg: #0B0B0D;
-  --color-primary: #6B8DF2;
-  --color-primary-dark: #5A73BF;
-  --color-surface: #2F3940;
-  --color-accent: #91CCD9;
+  --color-bg: #0b0b0d;
+  --color-primary: #6b8df2;
+  --color-primary-dark: #5a73bf;
+  --color-surface: #2f3940;
+  --color-accent: #91ccd9;
   --color-text: #d4d4d8;
   --color-text-muted: #9ca3af;
   --color-heading: #f3f4f6;
@@ -35,13 +35,19 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-heading);
 }
 
@@ -163,7 +169,11 @@ body .text-muted {
   gap: 1.25rem;
   padding: 1.25rem;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(107, 141, 242, 0.1), rgba(145, 204, 217, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(107, 141, 242, 0.1),
+    rgba(145, 204, 217, 0.1)
+  );
   border: 1px solid rgba(145, 204, 217, 0.2);
 }
 
@@ -179,7 +189,8 @@ body .text-muted {
   color: var(--color-accent);
 }
 
-.about-card p, .about-callout p {
+.about-card p,
+.about-callout p {
   line-height: 1.7;
 }
 
@@ -202,7 +213,11 @@ body .text-muted {
   top: 8px;
   bottom: 8px;
   width: 2px;
-  background: linear-gradient(to bottom, var(--color-primary), var(--color-surface));
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary),
+    var(--color-surface)
+  );
 }
 
 .timeline-item {

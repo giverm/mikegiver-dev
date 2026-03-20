@@ -17,16 +17,29 @@ function Sidebar() {
       <p className="text-accent mb-1" style={{ fontSize: '0.95rem' }}>
         {profile.title}
       </p>
-      <p className="text-muted text-center small mb-4">
-        {profile.tagline}
-      </p>
+      <p className="text-muted text-center small mb-4">{profile.tagline}</p>
 
-      <nav className="nav flex-column w-100 gap-2 mb-4" aria-label="External links">
-        <a href={profile.github.url} target="_blank" rel="noopener noreferrer" className="nav-btn" aria-label="GitHub (opens in new tab)">
+      <nav
+        className="nav flex-column w-100 gap-2 mb-4"
+        aria-label="External links"
+      >
+        <a
+          href={profile.github.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-btn"
+          aria-label="GitHub (opens in new tab)"
+        >
           <GitHubIcon />
           GitHub
         </a>
-        <a href={profile.linkedin.url} target="_blank" rel="noopener noreferrer" className="nav-btn" aria-label="LinkedIn (opens in new tab)">
+        <a
+          href={profile.linkedin.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-btn"
+          aria-label="LinkedIn (opens in new tab)"
+        >
           <LinkedInIcon />
           LinkedIn
         </a>
@@ -34,7 +47,10 @@ function Sidebar() {
 
       <hr className="sidebar-divider w-100 my-1" />
 
-      <nav className="nav flex-column w-100 gap-2 mt-2 mb-4" aria-label="Site navigation">
+      <nav
+        className="nav flex-column w-100 gap-2 mt-2 mb-4"
+        aria-label="Site navigation"
+      >
         <NavLink to="/" className="nav-btn" end>
           <PersonIcon />
           About
