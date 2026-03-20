@@ -1,11 +1,14 @@
 :root {
   --color-bg: #0b0b0d;
   --color-primary: #6b8df2;
+  --color-primary-rgb: 107, 141, 242;
   --color-primary-dark: #5a73bf;
   --color-surface: #2f3940;
+  --color-surface-rgb: 47, 57, 63;
   --color-accent: #91ccd9;
+  --color-accent-rgb: 145, 204, 217;
   --color-text: #d4d4d8;
-  --color-text-muted: #9ca3af;
+  --color-text-muted: #b0b8c1;
   --color-heading: #f3f4f6;
 }
 
@@ -67,7 +70,7 @@ a:hover {
 
 .sidebar {
   background-color: var(--color-surface);
-  border-right: 1px solid rgba(107, 141, 242, 0.15);
+  border-right: 1px solid rgba(var(--color-primary-rgb), 0.15);
   min-height: 100vh;
 }
 
@@ -87,15 +90,15 @@ a:hover {
 
 .sidebar .nav-btn:hover {
   color: var(--color-accent);
-  background-color: rgba(145, 204, 217, 0.08);
-  border-color: rgba(145, 204, 217, 0.2);
+  background-color: rgba(var(--color-accent-rgb), 0.08);
+  border-color: rgba(var(--color-accent-rgb), 0.2);
 }
 
 .sidebar .nav-btn.active {
   color: var(--color-primary);
   font-weight: 600;
-  background-color: rgba(107, 141, 242, 0.12);
-  border-color: rgba(107, 141, 242, 0.3);
+  background-color: rgba(var(--color-primary-rgb), 0.12);
+  border-color: rgba(var(--color-primary-rgb), 0.3);
 }
 
 .sidebar-divider {
@@ -116,7 +119,7 @@ a:hover {
   color: var(--color-accent);
 }
 
-body .text-muted {
+.text-subdued {
   color: var(--color-text-muted);
 }
 
@@ -148,7 +151,7 @@ body .text-muted {
   gap: 1.25rem;
   padding: 1.25rem;
   border-radius: 10px;
-  background-color: rgba(47, 57, 63, 0.4);
+  background-color: rgba(var(--color-surface-rgb), 0.4);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -160,7 +163,7 @@ body .text-muted {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgba(107, 141, 242, 0.12);
+  background-color: rgba(var(--color-primary-rgb), 0.12);
   color: var(--color-primary);
 }
 
@@ -171,10 +174,10 @@ body .text-muted {
   border-radius: 10px;
   background: linear-gradient(
     135deg,
-    rgba(107, 141, 242, 0.1),
-    rgba(145, 204, 217, 0.1)
+    rgba(var(--color-primary-rgb), 0.1),
+    rgba(var(--color-accent-rgb), 0.1)
   );
-  border: 1px solid rgba(145, 204, 217, 0.2);
+  border: 1px solid rgba(var(--color-accent-rgb), 0.2);
 }
 
 .about-callout-icon {
@@ -185,7 +188,7 @@ body .text-muted {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgba(145, 204, 217, 0.15);
+  background-color: rgba(var(--color-accent-rgb), 0.15);
   color: var(--color-accent);
 }
 
@@ -197,7 +200,7 @@ body .text-muted {
 .resume-header {
   padding: 1.5rem;
   border-radius: 10px;
-  background-color: rgba(47, 57, 63, 0.4);
+  background-color: rgba(var(--color-surface-rgb), 0.4);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -243,13 +246,13 @@ body .text-muted {
 .timeline-dot-active {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  box-shadow: 0 0 8px rgba(107, 141, 242, 0.5);
+  box-shadow: 0 0 8px rgba(var(--color-primary-rgb), 0.5);
 }
 
 .timeline-content {
   padding: 1rem 1.25rem;
   border-radius: 8px;
-  background-color: rgba(47, 57, 63, 0.3);
+  background-color: rgba(var(--color-surface-rgb), 0.3);
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
@@ -266,7 +269,7 @@ body .text-muted {
 .education-item {
   padding: 1rem;
   border-radius: 8px;
-  background-color: rgba(47, 57, 63, 0.3);
+  background-color: rgba(var(--color-surface-rgb), 0.3);
   border: 1px solid rgba(255, 255, 255, 0.04);
   text-align: center;
 }
@@ -296,9 +299,9 @@ body .text-muted {
 
 .skill-badge {
   display: inline-block;
-  background-color: rgba(107, 141, 242, 0.12);
+  background-color: rgba(var(--color-primary-rgb), 0.12);
   color: var(--color-primary);
-  border: 1px solid rgba(107, 141, 242, 0.25);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.25);
   border-radius: 4px;
   padding: 0.25rem 0.6rem;
   font-size: 0.85rem;

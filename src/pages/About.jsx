@@ -21,7 +21,7 @@ function About() {
   return (
     <div>
       <h2 className="mb-2">About Me</h2>
-      <p className="text-muted mb-4">{subtitle}</p>
+      <p className="text-subdued mb-4">{subtitle}</p>
 
       {cards.map((card, index) => {
         const IconComponent = iconMap[card.icon];

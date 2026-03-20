@@ -17,7 +17,7 @@ function Sidebar() {
       <p className="text-accent mb-1" style={{ fontSize: '0.95rem' }}>
         {profile.title}
       </p>
-      <p className="text-muted text-center small mb-4">{profile.tagline}</p>
+      <p className="text-subdued text-center small mb-4">{profile.tagline}</p>
 
       <nav
         className="nav flex-column w-100 gap-2 mb-4"

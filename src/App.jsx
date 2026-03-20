@@ -10,7 +10,7 @@ function NotFound() {
       style={{ minHeight: '50vh' }}
     >
       <h2 className="mb-3">Page Not Found</h2>
-      <p className="text-muted mb-4">
+      <p className="text-subdued mb-4">
         The page you&rsquo;re looking for doesn&rsquo;t exist.
       </p>
       <a href="/" className="btn btn-outline-primary">

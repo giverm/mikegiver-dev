@@ -10,7 +10,7 @@ function TimelineItem({ title, organization, dateRange, items, active }) {
               {organization}
             </span>
           </div>
-          <span className="text-muted small">{dateRange}</span>
+          <span className="text-subdued small">{dateRange}</span>
         </div>
         {items && items.length > 0 && (
           <ul className="mt-2">

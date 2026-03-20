@@ -28,7 +28,7 @@ function Resume() {
       <div className="resume-header mb-4">
         <h4 className="mb-1">{profile.name}</h4>
         <p className="text-accent mb-2">{profile.title}</p>
-        <p className="small text-muted mb-3">
+        <p className="small text-subdued mb-3">
           {profile.location} &middot; {profile.github.label} &middot;{' '}
           {profile.linkedin.label}
         </p>
@@ -66,7 +66,7 @@ function Resume() {
         <h5>Skills</h5>
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="mb-2">
-            <span className="text-muted small me-2">{category}:</span>
+            <span className="text-subdued small me-2">{category}:</span>
             {items.map((skill) => (
               <span key={skill} className="skill-badge">
                 {skill}
