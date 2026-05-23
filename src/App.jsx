@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Resume from './pages/Resume';
@@ -22,25 +23,28 @@ function NotFound() {
 
 function App() {
   return (
-    <div className="container-fluid">
-      <div className="row min-vh-100">
-        <a href="#main-content" className="skip-link">
-          Skip to main content
-        </a>
-        <Sidebar />
-        <main
-          id="main-content"
-          className="main-content col-md-8 col-lg-9 py-4 px-4"
-        >
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/about" element={<Navigate to="/" replace />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
+    <>
+      <div className="container-fluid">
+        <div className="row min-vh-100">
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
+          <Sidebar />
+          <main
+            id="main-content"
+            className="main-content col-md-8 col-lg-9 py-4 px-4"
+          >
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/about" element={<Navigate to="/" replace />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+        </div>
       </div>
-    </div>
+      <Analytics />
+    </>
   );
 }
 
