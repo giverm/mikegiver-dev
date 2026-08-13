@@ -10,6 +10,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview",
+    "resume:pdf": "node scripts/build-resume-pdf.mjs",
     "test": "vitest"
   },
   "dependencies": {

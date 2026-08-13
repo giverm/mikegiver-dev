@@ -24,3 +24,6 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Toolkit build output; the published copy is public/resume.pdf
+resume/resume.pdf

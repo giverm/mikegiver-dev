@@ -1,0 +1,25 @@
+---
+# ============================================================================
+# OVERLAY — the résumé published at mikegiver.dev/resume.pdf
+#
+# Build:  npm run resume:pdf   (wraps ~/Projects/resume-toolkit/build.sh)
+#
+# This is the public download, so it is a CONTACT-SUPPRESSED variant: no email,
+# no phone, no street address. Anyone who wants to reach him uses LinkedIn or
+# GitHub. The toolkit's classic-ats template renders each contact line
+# conditionally, so setting these to "" drops them and keeps the header intact.
+#
+# Everything else — summary, experience, research, publications, skills,
+# education — is inherited from the toolkit's base profile, which is the
+# grounding-checked source of truth. Do not restate content here unless it
+# genuinely differs for the public version; the point of an overlay is that it
+# stays small.
+# ============================================================================
+
+email: ''
+phone: ''
+location: Ballston Lake, NY
+github: github.com/giverm
+linkedin: linkedin.com/in/michael-giver
+website: mikegiver.dev
+---

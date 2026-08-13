@@ -25,8 +25,8 @@ export const cards = [
     paragraphs: [
       `I'm currently a software engineer at
       [Nava PBC](https://www.navapbc.com/), where I work on
-      [OSCER](https://github.com/navapbc/oscer), an open-source platform that
-      helps state Medicaid agencies administer community engagement
+      [OSCER](https://github.com/navapbc/oscer), an open-source platform built
+      to help state Medicaid agencies administer community engagement
       requirements. It's the kind of work I got into software engineering to
       do: building tools that have a direct, positive impact on people's
       lives.`,
@@ -40,8 +40,9 @@ export const cards = [
       leading a small engineering team that built a digital reading platform
       for elementary school literacy programs. Before that, I was at Annkissam
       for six and a half years, growing from a junior Rails developer into a
-      senior developer and group manager working across nonprofit and
-      healthcare clients.`,
+      senior developer and group manager, building systems for the
+      organizations that handle the finances of self-directed in-home care for
+      people with disabilities.`,
 
       `Throughout my career, I've gravitated toward work that matters: edtech,
       human services, healthcare, civic tech. I like knowing the code I write
