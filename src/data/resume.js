@@ -13,7 +13,7 @@ export const experience = [
       'Built the batch ingestion record validator and its error reporting, capturing rejected rows alongside their validation errors so data problems can be traced back to their source',
       'Built the data source check service that evaluates enrollee records against multiple administrative sources and publishes the domain events the platform reacts to downstream, and documented that event contract as the stable interface outside implementers integrate against',
       'Built end-to-end exemption screener: a multi-step guided flow with stateless navigation state machine supporting 7 exemption types, enabling Medicaid enrollees to self-determine eligibility without caseworker intervention',
-      'Authored the platform’s open-source extraction strategy: three documents including a seven-project comparative analysis and a phased roadmap adopted by other Nava teams',
+      'Authored the platform’s open-source update strategy: three documents including a seven-project comparative analysis and a phased roadmap of 12 implementation tickets across 3 phases',
       'Added dependency CVE scanning and a Dependabot update stream to the team’s CI pipeline',
       'Reviewed teammates’ code daily for correctness and maintainability, and mentored engineers through onboarding',
     ],
@@ -25,7 +25,7 @@ export const experience = [
     items: [
       'Grew and led a team of up to 4 engineers (Junior through Senior), conducting 1:1s, performance reviews, and career development planning',
       'Drove technical roadmap for digital reading platform serving 50+ school districts, collaborating with product managers to prioritize and ship features',
-      'Managed and optimized AWS infrastructure (EC2, RDS, S3), achieving 99.9% uptime for literacy platform serving thousands of students',
+      'Helped manage AWS infrastructure (EC2, RDS, S3) at 99.9% uptime for a literacy platform serving thousands of students',
       'Championed the accessibility work that brought the platform to WCAG 2.1 AA compliance',
     ],
   },
@@ -36,7 +36,6 @@ export const experience = [
     items: [
       'Spearheaded technical development of digital reading platform for elementary school literacy programs, launching to 50+ school districts nationwide',
       'Migrated legacy ERB templates to responsive React components, improving page load times and mobile user experience across tablet and Chromebook devices',
-      'Contributed to a team effort that raised automated test coverage from 20% to 98%, reducing production bugs and improving deployment confidence',
       'Implemented CI/CD pipelines using Jenkins and GitHub Actions, enabling multiple automated deploys per day',
     ],
   },
@@ -69,7 +68,7 @@ export const research = [
     organization: 'Brandeis University',
     dateRange: 'Jul 2008 \u2013 Jun 2013',
     items: [
-      'Developed computational models of coupled chemical oscillator networks, running large-scale simulations in C, Mathematica, and MATLAB',
+      'Developed computational models of coupled chemical oscillator networks, running simulations in C, Mathematica, and MATLAB',
       'Developed theoretical models that predicted novel synchronization behavior, subsequently confirmed by independent experimental groups',
       'Published 2 peer-reviewed papers on synchronization patterns and phase entrainment in oscillator systems',
       'Mentored undergraduate and junior graduate student researchers',
