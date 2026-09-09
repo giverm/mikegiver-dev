@@ -60,7 +60,7 @@ export const research = [
     dateRange: 'Jun 2013 \u2013 May 2014',
     items: [
       'Conducted research in nonequilibrium statistical physics, nonlinear dynamics, and complex systems, building simulation models of coupled chemical oscillators in C, Mathematica, and MATLAB',
-      'Analyzed simulation results using time-series and spectral analysis and regression',
+      'Analyzed simulation results using time-series analysis and numerical methods',
     ],
   },
   {
@@ -70,7 +70,8 @@ export const research = [
     items: [
       'Developed computational models of coupled chemical oscillator networks, running simulations in C, Mathematica, and MATLAB',
       'Developed theoretical models that predicted novel synchronization behavior, subsequently confirmed by independent experimental groups',
-      'Published 2 peer-reviewed papers on synchronization patterns and phase entrainment in oscillator systems',
+      'Analyzed simulation output using time-series and spectral analysis, correlation functions, and curve fitting, averaged over ensembles of independent runs',
+      'Published 2 peer-reviewed papers on synchronization patterns and phase entrainment in oscillator systems, first author on one',
       'Mentored undergraduate and junior graduate student researchers',
     ],
   },
